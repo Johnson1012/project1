@@ -1,0 +1,183 @@
+body{
+    overflow: hidden;
+}
+.container1,.container2.container3.container4{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img{
+    width: 110%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: imgEx 3s linear infinite;
+}
+@keyframes imgEx{
+    100%{
+        width: 100%;
+    }
+}
+.textbox{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    
+}
+.textbox2{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(0, 0, 0);
+    
+}
+.textbox h1{
+    margin-bottom: 40px;
+    animation: hEx 3s;
+}
+.textbox2 h1{
+    margin-bottom: 40px;
+    animation: hEx 3s;
+}
+.textbox p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    animation: pEx 3s linear infinite;
+    
+}
+.textbox2 p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    animation: pEx 3s linear infinite;
+    
+}
+.textbox p1 {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 34px;
+    color: black;
+}
+.textbox2 p1 {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 34px;
+    color: black;
+}
+@keyframes hEx{
+    0%{
+        opacity: 0;
+        transform: translate(-20%);
+    }
+    30%{
+        opacity: 0.1;
+        transform: translate(0%);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+@keyframes pEx{
+    0%{
+        opacity: 0;
+        transform: translate(-20%);
+    }
+    30%{
+        opacity: 0.1;
+        transform: translate(0%);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+.container1{
+    animation: imgSC1 12s linear infinite;
+}
+.container2{
+    animation: imgSC2 12s linear infinite;
+}
+.container3{
+    animation: imgSC3 12s linear infinite;
+}
+.container4{
+    animation: imgSC4 12s linear infinite;
+}
+@keyframes imgSC1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes imgSC2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes imgSC3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes imgSC4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
